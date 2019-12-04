@@ -11,11 +11,12 @@ export const TableWrapper = styled.div`
 `
 
 export const RowWrapper = styled.div`
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(178, 189, 191, 0.4);
+  background: #EBEDF0;
 `
 
 export const InactiveRowWrapper = styled.div`
-  border-bottom: 1px solid var(--faded-border);
+  border-bottom: 1px solid rgba(178, 189, 191, 0.4);
 `
 
 export const Row = styled.div`
@@ -29,7 +30,7 @@ export const Row = styled.div`
 export const CellWrapper = styled.div`
   width: ${props => props.width};
   text-align: ${props => props.align};
-  color: var(--white-text);
+  color: var(--inactive-text);
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;

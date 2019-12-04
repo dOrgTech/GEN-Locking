@@ -80,7 +80,7 @@ class GenAuctionTable extends React.Component<any, any>{
 
         return (
             <React.Fragment>
-                <RowWrapper>
+                <InactiveRowWrapper>
                     <Row>
                         {columns.map((column, index) => {
                             return (
@@ -90,7 +90,7 @@ class GenAuctionTable extends React.Component<any, any>{
                             )
                         })}
                     </Row>
-                </RowWrapper>
+                </InactiveRowWrapper>
                 {auctionDataLoaded && auctionsStarted ?
                     <TableWrapper>
                         {data.map((row, index) => {

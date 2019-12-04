@@ -1,7 +1,7 @@
 import React from 'react'
 import ProgressCircle from 'components/common/ProgressCircle'
 import { PanelWrapper, Instruction, SubInstruction, CircleAndTextContainer, Icon, Button, DisableButton } from 'components/common'
-import checkboxIcon from 'assets/svgs/checkbox.svg'
+import checkboxIcon from 'assets/svgs/turquois-checkbox.svg'
 import { observer, inject } from 'mobx-react'
 import { RootStore } from 'stores/Root'
 

@@ -19,7 +19,7 @@ const TextWrapper = styled.div`
 const Title = styled.div`
   display: flex;
   flex-direction: row;
-  color: var(--white-text);
+  color: var(--inactive-text);
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
