@@ -22,7 +22,7 @@ const SectionWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--border);
-  border-top: none;
+  border-radius: 4px;
 `
 
 @inject('root')
@@ -31,20 +31,7 @@ class ReputationBoostrapper extends React.Component<any, any> {
 
   renderWidgetWindow() {
     return (
-      <Switch>
-        <Route exact path="/lock-nec">
-          <LockNEC />
-        </Route>
-        <Route exact path="/airdrop">
-          <Airdrop />
-        </Route>
-        <Route exact path="/bid-gen">
-          <BidGEN />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/lock-nec" />
-        </Route>
-      </Switch>
+      <BidGEN />
     )
   }
 
@@ -71,7 +58,6 @@ class ReputationBoostrapper extends React.Component<any, any> {
   render() {
     return (
       <RootWrapper>
-        <Selector height="196px" />
         <SectionWrapper>
           {this.renderContents()}
         </SectionWrapper>
